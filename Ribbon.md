@@ -88,7 +88,7 @@ As a given, to keep the connection alive, the client should periodically send a 
 
 Upon connecting to a Ribbon, the client must send a [`new` message](Messages/client_new.md). The server will respond with a [`hello` message](Messages/server_hello.md). The client must then send an [`authorize` message](Messages/client_authorize.md), which will be responded to with an [`authorize` message](Messages/server_authorize.md). At this point, the client is free to do whatever.
 
-When the client is done, they should send the Ribbon a [`die` message](Messages/client_die.md) to indicate a graceful closure.
+When the client is done, it should send the Ribbon a [`die` message](Messages/client_die.md) to indicate a graceful closure.
 
 ## Id messages
 

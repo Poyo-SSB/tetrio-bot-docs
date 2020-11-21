@@ -12,7 +12,7 @@ To use this endpoint, provide a bearer token as authorization. For those unfamil
 authorization: Bearer <token>
 ```
 
-...where `<token>` is your super-duper secret user token. The endpoint will return a lot of neat data in JSON format, but the important data is as follows:
+...where `<token>` is the user's super-duper secret user token. The endpoint will return a lot of neat data in JSON format, but the important data is as follows:
 
 * (object):
     * (boolean) `success`: Whether the request succeeded.
