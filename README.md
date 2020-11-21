@@ -39,9 +39,9 @@ The core of a TETR.IO bot is interfacing with the [Ribbon](Ribbon.md) system.
 * Network fundamentals
     * [Ribbon](Ribbon.md)
     * [Observing Ribbon](Observing_Ribbon.md)
-    * [Resuming a connection](Resuming_a_connection.md) TODO
+    * [Resuming a connection](Resuming_a_connection.md)
 * Guides
-    * TODO
+    * [Chat](Chat.md)
 * Ribbon messages
     * Client
         * [authorize](client_authorize.md)
@@ -74,4 +74,4 @@ The core of a TETR.IO bot is interfacing with the [Ribbon](Ribbon.md) system.
 
 ## Disclaimer
 
-I, Poyo, the author of this documentation, am not associated with TETR.IO or osk. All data here has been gathered via analyzing code and testing responsibly. Use this documentation at your own risk. Please enjoy! ❤
+Hi! I'm Poyo. I wrote this documentation. I am not associated with TETR.IO or osk. All data here has been gathered via analyzing code and testing responsibly. Use this documentation at your own risk. Please enjoy! ❤
