@@ -15,6 +15,6 @@ In attempting to act as a client for a Ribbon, it may be necessary to study the 
     * (string) `type`: Either `"send"` or `"receive"`.
     * (float) `time`: The Unix timestamp of this message in seconds.
     * (integer) `opcode`: Websocket opcode, or something.
-    * (string) `data`: The binary data of this messge encoded in Base64.
+    * (string) `data`: The binary data of this messge encoded in [Base64](https://en.wikipedia.org/wiki/Base64).
 
-If you're writing a bot, it shouldn't be difficult to write a script to dump the binary data into files for inspection via a hex editor or to convert the contained messages into JSON for human readibility.
+TODO

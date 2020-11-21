@@ -12,7 +12,7 @@ Within the context of this documentation:
 * A **packet** is a binary blob sent over the websocket connection.
 * A **message** is a data object. **Packets** may contain one or more **messages**, and certain types of **messages** may contain nested **messages** within them.
 
-This is NOT the terminology that TETR.IO uses in its message format.
+This is NOT the terminology that TETR.IO uses in its message format and code—it uses these two terms interchangeably.
 
 ## Diagram notation
 
@@ -40,7 +40,7 @@ All top-level MessagePack objects contained within a packet are of the type `fix
 
 ## Packet format
 
-Packets will always begin with one of three bytes, signifying the header type. Both a Ribbon and a client may send any of these three packet types, but you can probably get away with only using `0x45`.
+Packets will always begin with one of three bytes, signifying the header type. Both a Ribbon and a client may send any of these three packet types, but the client can probably get away with only using `0x45`.
 
 ### `0x45` Standard id tag
 
@@ -62,7 +62,7 @@ A packet beginning in `0xAE` is an extracted-id packet, containing a big-endian 
 +------+-----+-----+-----+-----+==============+
 ```
 
-**Note:** The unpacked object may not contain an `id` key, so don't rely on its presence.
+**Note:** The unpacked object might not contain an `id` key, so don't rely on its presence.
 
 I don't know why this packet type exists.
 
@@ -71,9 +71,9 @@ I don't know why this packet type exists.
 A packet beginning in `0x58` is a batch packet, containing a zero-terminated array of big-endian `uint32`s. These values represent the length of the following packets.
 
 ```
-+------+------+------+------+------+------+------+------+------+====================+
-| 0x45 |   N lengths (uint32)...   | 0x00   0x00   0x00   0x00 | N msgpack blobs... |
-+------+------+------+------+------+------+------+------+------+====================+
++------+------+------+------+------+------+------+------+------+===================+
+| 0x45 |   N lengths (uint32)...   | 0x00   0x00   0x00   0x00 | N packet blobs... |
++------+------+------+------+------+------+------+------+------+===================+
 ```
 
 The blobs stored in this packet format are **packets**, not **messages**, meaning that they themselves contain one of these three headers (though probably always the first two).

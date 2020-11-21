@@ -12,7 +12,7 @@ This repository is dedicated to documenting the network protocol used by TETR.IO
 
 ## Bot application process
 
-Running a bot on a user account is a violation of TETR.IO's [community rules](https://tetr.io/about/rules/) and may result in your account being terminated. To run a bot, **you must acquire a bot account** ([e.g.](https://ch.tetr.io/u/5f9751f462f608df7f976f9e)). To get one, message osk on Discord with a short outline of your bot's intended functionality (or email them, but they do not check emails as frequently). osk's contact info can be found [here](https://osk.sh/).
+Running a bot on a user account is a violation of TETR.IO's [community rules](https://tetr.io/about/rules/) and *will* result in your account being terminated. To run a bot, **you must acquire a bot account** ([e.g.](https://ch.tetr.io/u/5f9751f462f608df7f976f9e)). To get one, message osk on Discord with a short outline of your bot's intended functionality (or email them, but they do not check emails as frequently). osk's contact info can be found [here](https://osk.sh/).
 
 ## What can bots do?
 
