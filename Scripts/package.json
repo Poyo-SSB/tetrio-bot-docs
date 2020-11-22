@@ -1,0 +1,7 @@
+{
+    "type": "module",
+    "dependencies": {
+        "base64-arraybuffer": "^0.2.0",
+        "msgpack-lite": "^0.1.26"
+    }
+}

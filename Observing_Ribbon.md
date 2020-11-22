@@ -17,4 +17,4 @@ In attempting to act as a client for a Ribbon, it may be necessary to study the 
     * (integer) `opcode`: Websocket opcode, or something.
     * (string) `data`: The binary data of this messge encoded in [Base64](https://en.wikipedia.org/wiki/Base64).
 
-TODO
+The [Scripts](Scripts) folder contains scripts to extract websocket data into more usable formats.
