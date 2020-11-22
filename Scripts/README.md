@@ -9,8 +9,8 @@ i think i'd like to use deno... but i doubt most people would be willing to inst
 -->
 
 1. Install Node (version ≥ 14.8.0).
-1. `npm install`
-1. `node <script>`
+1. Restore packages: `npm install`
+1. Run script: `node <script>`
 
 # Notes
 
