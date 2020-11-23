@@ -96,6 +96,10 @@ Most Ribbon messages have an integer `id` property. For gameplay especially, it 
 
 If too many messages are out of order, it's advisable to close the connection. The official TETR.IO client will close the connection if more than 600 packets are out of order.
 
+## Buffer messages
+
+Sometimes, the server will send [Buffer messages](Messages/server_Buffer.md). It's very important that any client handle these properly.
+
 ## List of messages
 
 **Note:** There are several messages not documented because they are only relevant to non-bot users (e.g. Tetra League/Quick Play).
@@ -115,6 +119,8 @@ If too many messages are out of order, it's advisable to close the connection. T
 
 ### Server
 
+
+* [Buffer](Messages/server_Buffer.md)
 * [authorize](Messages/server_authorize.md)
 * [chat](Messages/server_chat.md)
 * [error](Messages/server_error.md)

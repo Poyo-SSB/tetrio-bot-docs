@@ -56,6 +56,7 @@ The core of a TETR.IO bot is interfacing with the [Ribbon](Ribbon.md) system.
         * [resume](Messages/client_resume.md)
         * [updateconfig](Messages/client_updateconfig.md)
     * Server
+        * [Buffer](Messages/server_Buffer.md)
         * [authorize](Messages/server_authorize.md)
         * [chat](Messages/server_chat.md)
         * [error](Messages/server_error.md)
