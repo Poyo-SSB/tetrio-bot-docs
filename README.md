@@ -68,6 +68,7 @@ The core of a TETR.IO bot is interfacing with the [Ribbon](Ribbon.md) system.
         * [migrate](Messages/server_migrate.md)
         * [migrated](Messages/server_migrated.md)
         * [nope](Messages/server_nope.md)
+        * [ok](Messages/server_ok.md)
         * [pong](Messages/server_pong.md)
         * [readymulti](Messages/server_readymulti.md)
         * [refereeboard](Messages/server_refereeboard.md)

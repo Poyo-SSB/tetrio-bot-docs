@@ -127,6 +127,7 @@ If too many messages are out of order, it's advisable to close the connection. T
 * [migrate](Messages/server_migrate.md)
 * [migrated](Messages/server_migrated.md)
 * [nope](Messages/server_nope.md)
+* [ok](Messages/server_ok.md)
 * [pong](Messages/server_pong.md)
 * [readymulti](Messages/server_readymulti.md)
 * [refereeboard](Messages/server_refereeboard.md)
