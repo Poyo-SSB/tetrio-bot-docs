@@ -2,7 +2,7 @@
 
 Represents TETR.IO handling settings.
 
-# Format
+## Format
 
 * (object):
     * (string) `arr`: A float value in the range [1, 5] represented as a string. Represents automatic repeat rate.
