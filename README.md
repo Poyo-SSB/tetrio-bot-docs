@@ -36,6 +36,7 @@ The core of a TETR.IO bot is interfacing with the [Ribbon](Ribbon.md) system.
 
 * Misc
     * [Breaking changes](Breaking_changes.md)
+    * [Room_Config](Room_Config.md)
 * Network fundamentals
     * [Ribbon](Ribbon.md)
     * [Observing Ribbon](Observing_Ribbon.md)
@@ -53,6 +54,7 @@ The core of a TETR.IO bot is interfacing with the [Ribbon](Ribbon.md) system.
         * [new](Messages/client_new.md)
         * [ping](Messages/client_ping.md)
         * [resume](Messages/client_resume.md)
+        * [updateconfig](Messages/client_updateconfig.md)
     * Server
         * [authorize](Messages/server_authorize.md)
         * [chat](Messages/server_chat.md)

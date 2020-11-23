@@ -111,6 +111,7 @@ If too many messages are out of order, it's advisable to close the connection. T
 * [new](Messages/client_new.md)
 * [ping](Messages/client_ping.md)
 * [resume](Messages/client_resume.md)
+* [updateconfig](Messages/client_updateconfig.md)
 
 ### Server
 
