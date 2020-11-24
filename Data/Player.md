@@ -15,6 +15,6 @@ Represents a player in a TETR.IO room.
         * (integer) `games`: Total games played.
         * (integer) `wins`: Total games won.
         * (integer) `streak`: Number of games won in row.
-    * (string) `bracket`: Either `"player"` or `"spectator"`.
+    * (string) `bracket`: Always either `"player"` or `"spectator"`.
     * (boolean) `supporter`: Whether the user is a supporter or not.
     * (boolean) `verified`: Whether the user is verified or not.
