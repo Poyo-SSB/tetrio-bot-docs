@@ -23,3 +23,5 @@ This script dumps websocket packets in binary format to individual `.bin` files 
 # `log-har-websocket.js`
 
 This script logs individual Ribbon messages to a log file. Change the constants for the `.har` websocket index, the input file, and the output file.
+
+Note that this script does not give special treatment to [Buffer messages](../Messages/server_Buffer.md), but the script can be trivially modified to do so.
