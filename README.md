@@ -1,4 +1,4 @@
-### This version of the documentation is currently up-to-date for version **5.2.2** of TETR.IO (commit id `a407dfd`, December 22, 2020, 2:56 PM UTC).
+### This version of the documentation is currently up-to-date for version **5.2.2** of TETR.IO (commit id `f69d068`, December 25, 2020, 2:45 PM UTC).
 
 <!--
 the above date string is given by the following:
