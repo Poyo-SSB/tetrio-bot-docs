@@ -94,7 +94,7 @@ When the client is done, it should send the Ribbon a [`die` message](Messages/cl
 
 Most Ribbon messages have an integer `id` property. For gameplay especially, it is crucial to process these messages in order, so both client and server messages may have this property, incrementing the value every time a message is sent. For a possible implementation, see [tetrio.js](https://tetr.io/js/tetrio.js). Note that the ids of client messages and the ids of server messages may fall out of alignment because not every message from one side will result in a response from the other.
 
-If too many messages are out of order, it's advisable to close the connection. The official TETR.IO client will close the connection if more than 600 packets are out of order.
+If too many messages are out of order, it's advisable to close the connection. The official TETR.IO client will close the connection if more than 5200 packets are out of order.
 
 ## Buffer messages
 

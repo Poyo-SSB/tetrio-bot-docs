@@ -1,4 +1,4 @@
-### This version of the documentation is currently up-to-date for version **5.2.3** of TETR.IO (commit id `f17be2c`, January 10, 2021, 12:31 AM UTC).
+### This version of the documentation is currently up-to-date for version **6.0.0** of TETR.IO (commit id `3a422fb`, January 31, 2021, 4:20 PM UTC).
 
 <!--
 the above date string is given by the following:
@@ -7,6 +7,8 @@ hi, by the way ❤
 -->
 
 # TETR.IO bot documentation
+
+**This documentation is not finished. If you wish to contribute, pull requests are welcome.**
 
 This repository is dedicated to documenting the network protocol used by TETR.IO, as well as any other information that may be useful when developing a bot for TETR.IO. This is not the only way to develop a bot for TETR.IO—one may also directly interface with or modify the official TETR.IO client, in which case the information in this documentation is largely irrelevant. This documentation is for standalone bots which run without using the official TETR.IO client.
 
