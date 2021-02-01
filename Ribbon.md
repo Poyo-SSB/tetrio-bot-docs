@@ -34,7 +34,7 @@ a variable number of bytes:
 
 ## MessagePack
 
-Packets contain a header followed by one or more messages in [MessagePack format](https://msgpack.org/). [MessagePack](https://msgpack.org/index.html#languages) has numerous implementations, covering every language under the sun. The MessagePack implementation used by both TETR.IO's client and server is [msgpack-lite](https://github.com/kawanet/msgpack-lite) ([npm](https://www.npmjs.com/package/msgpack-lite)). If you wish to reinvent the wheel or need to inspect binary data for debugging purposes, the binary specification can be found [here](https://github.com/msgpack/msgpack/blob/master/spec.md).
+Packets contain a header followed by one or more messages in [MessagePack format](https://msgpack.org/). MessagePack has [numerous implementations](https://msgpack.org/index.html#languages), covering every language under the sun. The MessagePack implementation used by both TETR.IO's client and server is [msgpack-lite](https://github.com/kawanet/msgpack-lite) ([npm](https://www.npmjs.com/package/msgpack-lite)). If you wish to reinvent the wheel or need to inspect binary data for debugging purposes, the binary specification can be found [here](https://github.com/msgpack/msgpack/blob/master/spec.md).
 
 All top-level MessagePack objects contained within a packet are of the type `fixmap`, `map 16`, or `map 32`.
 
