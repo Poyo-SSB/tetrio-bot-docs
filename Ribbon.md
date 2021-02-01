@@ -36,11 +36,11 @@ a variable number of bytes:
 
 Packets contain a header followed by one or more messages in [MessagePack format](https://msgpack.org/). MessagePack has [numerous implementations](https://msgpack.org/index.html#languages), covering every language under the sun. The MessagePack implementation used by both TETR.IO's client and server is [msgpack-lite](https://github.com/kawanet/msgpack-lite) ([npm](https://www.npmjs.com/package/msgpack-lite)). If you wish to reinvent the wheel or need to inspect binary data for debugging purposes, the binary specification can be found [here](https://github.com/msgpack/msgpack/blob/master/spec.md).
 
-All top-level MessagePack objects contained within a packet are of the type `fixmap`, `map 16`, or `map 32`.
+All top-level MessagePack objects contained within a packet are `Map`s (i.e. `fixmap`, `map 16`, or `map 32`).
 
 ## Packet format
 
-Packets will always begin with one of three bytes, signifying the header type. Both a Ribbon and a client may send any of these three packet types, but the client can probably get away with only using `0x45`.
+Packets will always begin with one of three bytes, signifying the header type. Both a Ribbon and a client may send any of these three packet types, but the client can probably get away with only sending `0x45`.
 
 ### `0x45` Standard id tag
 
