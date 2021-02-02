@@ -10,7 +10,7 @@ hi, by the way ❤
 
 **This documentation is not finished. If you wish to contribute, pull requests are welcome.**
 
-This repository is dedicated to documenting the network protocol used by TETR.IO, as well as any other information that may be useful when developing a bot for TETR.IO. This is not the only way to develop a bot for TETR.IO—one may also directly interface with or modify the official TETR.IO client, in which case the information in this documentation is largely irrelevant. This documentation is for standalone bots which run without using the official TETR.IO client.
+This repository is dedicated to documenting the network protocol used by TETR.IO, as well as any other information that may be useful when developing a bot for TETR.IO. This is not the only way to develop a bot for TETR.IO—one may also directly interface with or modify the official TETR.IO client, in which case the information in this documentation is largely irrelevant. This documentation is primarily for standalone bots which run without using the official TETR.IO client, but extra non-bot information may be available for elements that could be useful to interface with programmatically and are not in violation of TETR.IO's rules.
 
 ## Bot application process
 
