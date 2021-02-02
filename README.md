@@ -56,6 +56,7 @@ The core of a TETR.IO bot is interfacing with the [Ribbon](Ribbon.md) system.
         * [new](Messages/client_new.md)
         * [ping](Messages/client_ping.md)
         * [resume](Messages/client_resume.md)
+        * [social.dm](Messages/client_social_dm.md)
         * [switchbracket](Messages/client_switchbracket.md)
         * [switchbrackethost](Messages/client_switchbrackethost.md)
         * [updateconfig](Messages/client_updateconfig.md)
@@ -78,6 +79,8 @@ The core of a TETR.IO bot is interfacing with the [Ribbon](Ribbon.md) system.
         * [readymulti](Messages/server_readymulti.md)
         * [refereeboard](Messages/server_refereeboard.md)
         * [replay](Messages/server_replay.md)
+        * [social.dm](Messages/server_social_dm.md)
+        * [social.presence](Messages/server_social_presence.md)
         * [startmulti](Messages/server_startmulti.md)
 
 ## Disclaimer
