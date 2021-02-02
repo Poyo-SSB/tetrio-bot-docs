@@ -1,21 +1,21 @@
 # `social.dm` message (sever)
 
-A message sent from a Ribbon indicating that the client has received a message. This should always be received after sendin a message.
+A message sent from a Ribbon indicating that the client has received a social message, including messages that the client sends.
 
 ## Format
 
 * (object):
-  * (string) `command`: Always `"social.dm"`.
-  * (object) `data`:
-    * (string) `stream`: The IDs of the sender and recipient joined by colons. e.g `"abcdefghij:1234567890"`.
+    * (string) `command`: Always `"social.dm"`.
     * (object) `data`:
-      * (string) `content`: Contents of the message.
-      * (string) `content_safe`: Contents of the message after being passed though TETR.IO's profanity filter.
-      * (string) `user`: The UUID of the sender.
-      * (object) `userdata`:
-        * (string) `role`: Currently, only `"user"` has been seen in practice.
-        * (boolean) `supporter`: Whether the user is a TETR.IO supporter.
-        * (boolean) `verified`: Whether the user is verified.
-      * (boolean) `system`: Currently `false` in practice. System messages may be responses that the user has blocked them, or something along those lines.
-    * (string) `ts`: An ISO 8601 formatted timestamp of the message.
-    * (string) `_id`: The ID of the message.
+        * (string) `stream`: The id of the chat stream. In practice, this is always the id of the client and the id of the other user joined by a colon, e.g. `"abcdef:012345"`.
+        * (object) `data`:
+            * (string) `content`: Contents of the message.
+            * (string) `content_safe`: Contents of the message after being passed though TETR.IO's profanity filter.
+            * (string) `user`: The id of the sender.
+            * (object) `userdata`:
+                * (string) `role`: The role of the user. One of [`"anon"`, `"user"`, `"bot"`, `"mod"`, `"admin"`], though `anon` and `bot` will never be seen in-practice as these users cannot use the social system.
+                * (boolean) `supporter`: Whether the user is a supporter.
+                * (boolean) `verified`: Whether the user is verified.
+            * (boolean) `system`: Whether this is a system message.
+        * (string) `ts`: The ISO 8601-formatted timestamp of the message.
+        * (string) `_id`: The id of the message.

@@ -5,15 +5,15 @@ A message sent by a Ribbon to the client to indicate that a friend has changed t
 ## Format
 
 * (object):
-  * (integer) `id`: [The id of this message.](../Ribbon.md#id-messages)
-  * (string) `command`: Always `"social.presence"`.
-  * (object) `data`:  
-    * (string) `user`: The UUID of the user whose presence was changed.
-    * (string, [detail](##detail)) `detail`: What that user is currently doing.
-    * (boolean) `invitable`: Whether the user can be invited to a lobby.
-    * (string, [status](##status)) `status`: What status the user is in.
+    * (integer) `id`: [The id of this message.](../Ribbon.md#id-messages)
+    * (string) `command`: Always `"social.presence"`.
+    * (object) `data`:  
+        * (string) `user`: The id of the user whose presence was changed.
+        * (string ([Detail](#detail))) `detail`: What that user is currently doing.
+        * (boolean) `invitable`: Whether the user can be invited to a lobby.
+        * (string ([Status](#status))) `status`: What status the user is in.
 
-## `detail`
+## Detail
 
 The valid values of `data.detail` are any of the following:
 
@@ -24,10 +24,10 @@ The valid values of `data.detail` are any of the following:
 * `"40l"`: User is doing a 40-line sprint.
 * `"lobby_ig:ABCD"`: User is in a lobby, where `ABCD` is the room code
 
-## `status`
+## Status
 
 The valid values of `data.status` are any of the following:
 
-* `"away"`: User is idle/AFK.
-* `"busy"`: User has turned on Do Not Disturb / is in a Tetra League match.
+* `"away"`: User is idle.
+* `"busy"`: User has turned on Do Not Disturb and/or is in a Tetra League match.
 * `"online"`: User is online.
