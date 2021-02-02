@@ -22,7 +22,10 @@ The valid values of `data.detail` are any of the following:
 * `"zen"`: User is playing Zen.
 * `"blitz"`: User is playing Blitz.
 * `"40l"`: User is doing a 40-line sprint.
-* `"lobby_ig:ABCD"`: User is in a lobby, where `ABCD` is the room code
+* `"lobby_ig:ABCD"`: User is in a public lobby, where `ABCD` is the room code.
+* `"lobby:X-PRIV"`: User is in a private lobby, or has disabled "Who can see what room I'm in".
+* `"lobby:X-QP"`: User is in the Quick Play lobby.
+* `""` (empty): User has disabled presence broadcasting.
 
 ## Status
 
@@ -31,3 +34,4 @@ The valid values of `data.status` are any of the following:
 * `"away"`: User is idle.
 * `"busy"`: User has turned on Do Not Disturb and/or is in a Tetra League match.
 * `"online"`: User is online.
+* `"offline"`: User is offline.
