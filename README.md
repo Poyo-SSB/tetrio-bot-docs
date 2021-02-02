@@ -82,4 +82,4 @@ The core of a TETR.IO bot is interfacing with the [Ribbon](Ribbon.md) system.
 
 ## Disclaimer
 
-Hi! I'm Poyo. I wrote this documentation. I am not associated with TETR.IO or osk. All data here has been gathered via analyzing code and testing responsibly. Use this documentation at your own risk. Please enjoy! ❤
+Hi! I'm Poyo. I wrote (most of) this documentation. I am not associated with TETR.IO or osk. All data here has been gathered via analyzing [code](https://tetr.io/js/tetrio.js) and testing responsibly. Use this documentation at your own risk. Please enjoy! ❤
