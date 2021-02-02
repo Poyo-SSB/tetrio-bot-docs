@@ -4,11 +4,11 @@ There are two circumstances under which resuming a connection is necessary. The 
 
 When initially connecting to a Ribbon, the Ribbon will send a [`hello` message](Messages/server_hello.md) to the client containing two critical pieces of information—the socket id (`id`) and the resume token (`resume`). These should be stored for use in the event that resuming is necessary.
 
-After reconnecting to a Ribbon, whether via a new endpoint or with the same one, the client must send a [`resume` message](Messages/client_resume.md) with the socket id (`socketid`) and resume token (`resumetoken`). After this, the client should send a [`hello` message](Messages/client_hello.md) with the most recent id'd packets sent to the Ribbon so it can handle the ones it hasn't seen because the client was disconnected at the time. This is to ensure sync. After this, the server will send a [`hello` message](Messages/server_hello.md) back with the its own most-recent id'd packets for the client to sort through. The official TETR.IO client sends approximately enough packets to cover the last 30 seconds of data transmission or 2000, whichever is lower. The pseudocode that calculates this every time a new messages is sent is shown below.
+After reconnecting to a Ribbon, whether via a new endpoint or with the same one, the client must send a [`resume` message](Messages/client_resume.md) with the socket id (`socketid`) and resume token (`resumetoken`). After this, the client should send a [`hello` message](Messages/client_hello.md) with the most recent id'd messages sent to the Ribbon so it can handle the ones it hasn't seen because the client was disconnected at the time. This is to ensure sync. After this, the server will send a [`hello` message](Messages/server_hello.md) back with the its own most-recent id'd messages for the client to sort through. The official TETR.IO client sends approximately enough messages to cover the last 30 seconds, clamped between 100 and 2000. The pseudocode that calculates this every time a new messages is sent is shown below.
 
 ```js
-if (lastSentId is divisible by 100) {
-    let packetsPerSecond = 1000 / (seconds since last recalculation) / 100;
-    let cacheSize = max(100, min(30 * packetsPerSecond, 2000));
+if (lastSentId is evenly divisible by 100) {
+    let messagesPerSecond = 1000 / (seconds since last recalculation) / 100;
+    let cacheSize = max(100, min(30 * messagesPerSecond, 2000));
 }
 ```

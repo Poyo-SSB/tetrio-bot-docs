@@ -34,9 +34,9 @@ a variable number of bytes:
 
 ## MessagePack
 
-Packets contain a header followed by one or more messages in [MessagePack format](https://msgpack.org/). MessagePack has [numerous implementations](https://msgpack.org/index.html#languages), covering every language under the sun. The MessagePack implementation used by both TETR.IO's client and server is [msgpack-lite](https://github.com/kawanet/msgpack-lite) ([npm](https://www.npmjs.com/package/msgpack-lite)). If you wish to reinvent the wheel or need to inspect binary data for debugging purposes, the binary specification can be found [here](https://github.com/msgpack/msgpack/blob/master/spec.md).
+Packets contain a header followed by one or more messages in [MessagePack format](https://msgpack.org/). MessagePack has [numerous implementations](https://msgpack.org/index.html#languages) covering every language under the sun. The MessagePack implementation used by both TETR.IO's client and server is [msgpack-lite](https://github.com/kawanet/msgpack-lite) ([npm](https://www.npmjs.com/package/msgpack-lite)). If you wish to reinvent the wheel or need to inspect binary data for debugging purposes, the binary specification can be found [here](https://github.com/msgpack/msgpack/blob/master/spec.md).
 
-All top-level MessagePack objects contained within a packet are `Map`s (i.e. `fixmap`, `map 16`, or `map 32`).
+All top-level MessagePack objects contained within a packet are maps (i.e. `fixmap`, `map 16`, or `map 32`).
 
 ## Packet format
 
@@ -44,7 +44,7 @@ Packets will always begin with one of three bytes, signifying the header type. B
 
 ### `0x45` Standard id tag
 
-A packet beginning in `0x45` is a standard packet and everything after the first byte can be unpacked and processed.
+A packet beginning with `0x45` is a standard packet and everything after the first byte can be unpacked and processed.
 
 ```
 +------+==============+
@@ -54,7 +54,7 @@ A packet beginning in `0x45` is a standard packet and everything after the first
 
 ### `0xAE` Extracted id tag
 
-A packet beginning in `0xAE` is an extracted-id packet, containing a big-endian `uint32` message id to be injected into the unpacked object before processing.
+A packet beginning with `0xAE` is an extracted-id packet, containing a big-endian 32-bit unsigned integer message id to be injected into the unpacked object before processing.
 
 ```
 +------+-----+-----+-----+-----+==============+
@@ -68,7 +68,7 @@ I don't know why this packet type exists.
 
 ### `0x58` Batch tag
 
-A packet beginning in `0x58` is a batch packet, containing a zero-terminated array of big-endian `uint32`s. These values represent the length of the following packets.
+A packet beginning with `0x58` is a batch packet, containing a zero-terminated array of big-endian `uint32`s. These values represent the length of the following packets.
 
 ```
 +------+------+------+------+------+------+------+------+------+===================+
@@ -88,11 +88,11 @@ As a given, to keep the connection alive, the client should periodically send a 
 
 Upon connecting to a Ribbon, the client must send a [`new` message](Messages/client_new.md). The server will respond with a [`hello` message](Messages/server_hello.md). The client must then send an [`authorize` message](Messages/client_authorize.md), which will be responded to with an [`authorize` message](Messages/server_authorize.md). At this point, the client is free to do whatever.
 
-When the client is done, it should send the Ribbon a [`die` message](Messages/client_die.md) to indicate a graceful closure.
+When the client is done, it should send the Ribbon a [`die` message](Messages/client_die.md) to indicate a graceful closure. Poetic.
 
 ## Id messages
 
-Most Ribbon messages have an integer `id` property. For gameplay especially, it is crucial to process these messages in order, so both client and server messages may have this property, incrementing the value every time a message is sent. For a possible implementation, see [tetrio.js](https://tetr.io/js/tetrio.js). Note that the ids of client messages and the ids of server messages may fall out of alignment because not every message from one side will result in a response from the other.
+Most Ribbon messages have an integer `id` property. For gameplay especially, it is crucial to process these messages in order, so both client and server messages may have this property, incrementing the value every time a message is sent. For a possible implementation, see [tetrio.js](https://tetr.io/js/tetrio.js). Note that the ids of client messages and the ids of server messages will fall out of alignment because not every message from one side will result in a response from the other.
 
 If too many messages are out of order, it's advisable to close the connection. The official TETR.IO client will close the connection if more than 5200 packets are out of order.
 

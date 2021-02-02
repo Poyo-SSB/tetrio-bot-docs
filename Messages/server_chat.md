@@ -13,7 +13,7 @@ A message representing a chat message.
         * (object) `user`: The user who prompted the message.
             * (string) `username`: The username of the user.
             * (string) `_id`: The id of the user.
-            * ([Role](../Data/Role.md)) `role`?: The role of the user.
+            * (string ([Role](../Data/Role.md))) `role`?: The role of the user.
             * (boolean) `supporter`?: Whether the user is a supporter.
             * (boolean) `verified`?: Whether the user is verified.
         * (boolean) `system`: Whether this is a system message.

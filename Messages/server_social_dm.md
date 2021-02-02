@@ -13,7 +13,7 @@ A message sent from a Ribbon indicating that the client has received a social me
             * (string) `content_safe`: Contents of the message after being passed through TETR.IO's profanity filter.
             * (string) `user`: The id of the sender.
             * (object) `userdata`:
-                * (string) `role`: The role of the user. One of [`"anon"`, `"user"`, `"bot"`, `"mod"`, `"admin"`], though `anon` and `bot` will never be seen in-practice as these users cannot use the social system.
+                * (string ([Role](../Data/Role.md))) `role`: The role of the user. `anon` and `bot` will never be seen in-practice as these users cannot use the social system.
                 * (boolean) `supporter`: Whether the user is a supporter.
                 * (boolean) `verified`: Whether the user is verified.
             * (boolean) `system`: Whether this is a system message.

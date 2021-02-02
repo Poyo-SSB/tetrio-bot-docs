@@ -8,8 +8,8 @@ Represents a player in a TETR.IO room.
     * (string) `_id`: The id of the user.
     * (string) `username`: The username of the user.
     * (boolean) `anon`: Whether the user is anonymous.
-    * (boolean) `bot`: The username of the user.
-    * ([Role](../Data/Role.md)) `role`: The role of the user.
+    * (boolean) `bot`: Whether the user is a bot.
+    * (string ([Role](../Data/Role.md))) `role`: The role of the user.
     * (integer) `xp`: The amount of experience points the user has.
     * (object) `record`: Player scoreboard data.
         * (integer) `games`: Total games played.

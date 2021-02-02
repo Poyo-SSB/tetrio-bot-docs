@@ -1,4 +1,4 @@
-# `kick` message (server)
+# `nope` message (server)
 
 A message sent by a Ribbon to the client when the client violates protocol and the Ribbon feels unsafe.
 

@@ -9,5 +9,5 @@ A message sent by a Ribbon to the client to accept or reject an [`authorize` mes
     * (string) `command`: Always `"authorize"`.
     * (object) `data`:
         * (boolean) `success`: Whether the authorization request was successful.
-        * (boolean) `maintenance`: Unknown. Whether the server is undergoing maintenance right now? Maybe?
-        * ([Worker](../Data/Worker.md)) `worker`: The worker we're communicating with.
+        * (boolean) `maintenance`: Probably whether the server is undergoing maintenance right now.
+        * ([Worker](../Data/Worker.md)) `worker`: The worker the client is communicating with.
