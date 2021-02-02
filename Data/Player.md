@@ -9,12 +9,12 @@ Represents a player in a TETR.IO room.
     * (string) `username`: The username of the user.
     * (boolean) `anon`: Whether the user is anonymous.
     * (boolean) `bot`: The username of the user.
-    * (string) `role`: The role of the user. One of [`"anon"`, `"user"`, `"bot"`, `"mod"`, `"admin"`].
+    * ([Role](../Data/Role.md)) `role`: The role of the user.
     * (integer) `xp`: The amount of experience points the user has.
     * (object) `record`: Player scoreboard data.
         * (integer) `games`: Total games played.
         * (integer) `wins`: Total games won.
         * (integer) `streak`: Number of games won in row.
     * (string) `bracket`: Always either `"player"` or `"spectator"`.
-    * (boolean) `supporter`: Whether the user is a supporter or not.
-    * (boolean) `verified`: Whether the user is verified or not.
+    * (boolean) `supporter`: Whether the user is a supporter.
+    * (boolean) `verified`: Whether the user is verified.

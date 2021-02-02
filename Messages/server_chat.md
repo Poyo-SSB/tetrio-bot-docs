@@ -13,9 +13,9 @@ A message representing a chat message.
         * (object) `user`: The user who prompted the message.
             * (string) `username`: The username of the user.
             * (string) `_id`: The id of the user.
-            * (string?) `role`: The role of the user. One of [`"anon"`, `"user"`, `"bot"`, `"mod"`, `"admin"`].
-            * (boolean?) `supporter`: Whether the user is a supporter.
-            * (boolean?) `verified`: Whether the user is verified.
+            * ([Role](../Data/Role.md)) `role`?: The role of the user.
+            * (boolean) `supporter`?: Whether the user is a supporter.
+            * (boolean) `verified`?: Whether the user is verified.
         * (boolean) `system`: Whether this is a system message.
 
 `data.user.role`, `data.user.supporter`, and `data.user.verified` will not be present if `data.system` is `true`.

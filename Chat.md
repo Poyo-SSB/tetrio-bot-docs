@@ -16,9 +16,9 @@ authorization: Bearer <token>
 
 * (object):
     * (boolean) `success`: Whether the request succeeded.
-    * (object[]?) `errors`: The resulting errors, if any.
+    * (object[]) `errors`?: The resulting errors, if any.
         * (string) `msg`: A single error message.
     * (object) `user`: The user to whom the token belongs.
         * (string) `id`: The id of the user.
         * (string) `username`: The username of the user.
-        * (string) `role`: The role of the user. (I use this to yell at anyone who tries to use a non-bot account).
+        * (([Role](../Data/Role.md)) `role`: The role of the user. (I use this to yell at anyone who tries to use a non-bot account).
