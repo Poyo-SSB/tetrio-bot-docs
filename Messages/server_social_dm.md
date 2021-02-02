@@ -19,3 +19,5 @@ A message sent from a Ribbon indicating that the client has received a social me
             * (boolean) `system`: Whether this is a system message.
         * (string) `ts`: The ISO 8601-formatted timestamp of the message.
         * (string) `_id`: The id of the message.
+
+`data.data.user` and `data.data.userdata` may not be present if `data.data.system` is `true`, though this has yet to be observed.

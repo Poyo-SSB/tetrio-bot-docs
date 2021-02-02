@@ -11,7 +11,7 @@ A message sent by a Ribbon to the client to indicate that a friend has changed t
         * (string) `user`: The id of the user whose presence was changed.
         * (string ([Detail](#detail))) `detail`: What that user is currently doing.
         * (boolean) `invitable`: Whether the user can be invited to a lobby.
-        * (string ([Status](#status))) `status`: What status the user is in.
+        * (string ([Status](#status))) `status`: The social status of the user.
 
 ## Detail
 
@@ -23,7 +23,7 @@ The valid values of `data.detail` are any of the following:
 * `"blitz"`: User is playing Blitz.
 * `"40l"`: User is doing a 40-line sprint.
 * `"lobby_ig:ABCD"`: User is in a public lobby, where `ABCD` is the room code.
-* `"lobby:X-PRIV"`: User is in a private lobby, or has disabled "Who can see what room I'm in".
+* `"lobby:X-PRIV"`: User is in a private lobby, or the client is not included in the user's visibility settings.
 * `"lobby:X-QP"`: User is in the Quick Play lobby.
 * `""` (empty): User has disabled presence broadcasting.
 
