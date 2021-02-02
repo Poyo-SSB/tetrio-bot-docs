@@ -10,7 +10,7 @@ A message sent from a Ribbon indicating that the client has received a social me
         * (string) `stream`: The id of the chat stream. In practice, this is always the id of the client and the id of the other user joined by a colon, e.g. `"abcdef:012345"`.
         * (object) `data`:
             * (string) `content`: Contents of the message.
-            * (string) `content_safe`: Contents of the message after being passed though TETR.IO's profanity filter.
+            * (string) `content_safe`: Contents of the message after being passed through TETR.IO's profanity filter.
             * (string) `user`: The id of the sender.
             * (object) `userdata`:
                 * (string) `role`: The role of the user. One of [`"anon"`, `"user"`, `"bot"`, `"mod"`, `"admin"`], though `anon` and `bot` will never be seen in-practice as these users cannot use the social system.
