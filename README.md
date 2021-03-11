@@ -1,4 +1,4 @@
-### This version of the documentation is currently up-to-date for version **6.0.1** of TETR.IO (commit id `b361fcd`, March 7, 2021, 7:32 PM UTC.
+### This version of the documentation is currently up-to-date for version **6.0.2** of TETR.IO (commit id `7df7eec`, March 11, 2021, 9:22 PM UTC.
 
 <!--
 the above date string is given by the following:
@@ -22,6 +22,7 @@ Bots **can**:
 * Join public custom games.
 * Join private custom games, given the room id.
 * Create their own custom games.
+* Use the social system.
 
 Bots **cannot**:
 * Play singleplayer modes.
