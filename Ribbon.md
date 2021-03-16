@@ -80,11 +80,28 @@ The blobs stored in this packet format are **packets**, not **messages**, meanin
 
 This packet type was added in TETR.IO 5.1.3.
 
+### `0xB0` Extension tag
+
+A packet beginning with `0xB0` is an extension packet, used to relay terse messages via the second byte. It's currently only used for pings and pongs.
+
+```
++------+------+
+| 0xB0 | type |
++------+------+
+```
+
+The current possible values for the second byte include:
+
+* `0x0B` ping (client)
+* `0x0C` pong (server)
+
+The `0x0B` ping and `0x0C` pong packets replace the [`ping` message](Messages/client_ping.md) and [`pong` message](Messages/server_pong.md) used prior to TETR.IO 6.0.3.
+
 ## Message protocol
 
 If this protocol is violated, the server will usually send either a [`nope` message](Messages/server_nope.md) or [`kick` message](Messages/server_kick.md) and end the connection.
 
-As a given, to keep the connection alive, the client should periodically send a [`ping` message](Messages/client_ping.md), which will be responded to with a [`pong` message](Messages/server_pong.md). The official TETR.IO client sends a `ping` every 5000ms.
+As a given, to keep the connection alive, the client should periodically send a `0x0B` ping extension packet, which will be responded to with a `0x0C` pong extension packet. The official TETR.IO client sends a ping every 5000ms.
 
 Upon connecting to a Ribbon, the client must send a [`new` message](Messages/client_new.md). The server will respond with a [`hello` message](Messages/server_hello.md). The client must then send an [`authorize` message](Messages/client_authorize.md), which will be responded to with an [`authorize` message](Messages/server_authorize.md). At this point, the client is free to do whatever.
 

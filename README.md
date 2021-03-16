@@ -1,4 +1,4 @@
-### This version of the documentation is currently up-to-date for version **6.0.2** of TETR.IO (commit id `7df7eec`, March 11, 2021, 9:22 PM UTC.
+### This version of the documentation is currently up-to-date for version **6.0.3** of TETR.IO (commit id `d16ac3c`, March 16, 2021, 7:42 PM UTC).
 
 <!--
 the above date string is given by the following:
@@ -55,7 +55,7 @@ The core of a TETR.IO bot is interfacing with the [Ribbon](Ribbon.md) system.
         * [joinroom](Messages/client_joinroom.md)
         * [leaveroom](Messages/client_leaveroom.md)
         * [new](Messages/client_new.md)
-        * [ping](Messages/client_ping.md)
+        * ~~[ping](Messages/client_ping.md)~~
         * [resume](Messages/client_resume.md)
         * [social.dm](Messages/client_social_dm.md)
         * [switchbracket](Messages/client_switchbracket.md)
@@ -76,7 +76,7 @@ The core of a TETR.IO bot is interfacing with the [Ribbon](Ribbon.md) system.
         * [migrated](Messages/server_migrated.md)
         * [nope](Messages/server_nope.md)
         * [ok](Messages/server_ok.md)
-        * [pong](Messages/server_pong.md)
+        * ~~[pong](Messages/server_pong.md)~~
         * [readymulti](Messages/server_readymulti.md)
         * [refereeboard](Messages/server_refereeboard.md)
         * [replay](Messages/server_replay.md)
