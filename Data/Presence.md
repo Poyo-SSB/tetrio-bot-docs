@@ -16,7 +16,7 @@ some or all of this information may be shown differently to other players.
 The possible values are listed below, alongside their in game description. If an invalid `detail` is sent to Ribbon, the
 default status message is shown instead.
 
-* `"""` - *No detail - the client cannot see this due to the user's privacy settings.* 
+* `""` - *No detail - the client cannot see this due to the user's privacy settings.* 
 
 ### Online
 
