@@ -1,6 +1,6 @@
 # `social.presence` message (client)
 
-A message sent representing a social system presence update.
+A message sent to Ribbon representing a social system presence update.
 
 ## Format
 
