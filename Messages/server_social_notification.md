@@ -13,7 +13,7 @@ A message sent to a client indicating the presence of a new social notification.
         * (object) `data`: Type-specific notification data. See below for the format of this object.
         * (string) `ts`: The ISO 8601-formatted timestamp of the notification.
         * (boolean) `seen`: Whether the notification has been [acknowledged](client_social_notifications_ack.md) yet.
-        * (string) `_id`: The notification ID, presumably used to acknowledge the notification.
+        * (string) `_id`: The notification id, presumably used to acknowledge the notification.
     * (integer) `id`: [The id of this message.](../Ribbon.md#id-messages)
     
 ## `friend` notification format

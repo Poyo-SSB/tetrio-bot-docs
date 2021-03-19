@@ -6,4 +6,4 @@ A message sent by a Ribbon to the client to indicate that a friend has changed t
 
 * (object):
     * (string) `command`: Always `"social.presence"`.
-    * (Presence) `data`: The friend's [Presence](../Data/Presence.md).
+    * ([Presence](../Data/Presence.md)) `data`: The friend's presence information.

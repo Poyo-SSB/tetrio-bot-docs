@@ -7,7 +7,7 @@ A message sent representing a room invite received by a client.
 * (object):
     * (string) `command`: Always `"social.invite"`.
     * (object) `data`:
-      * (string) `sender`: The ID of the player who invited the client
-      * (string) `roomid`: The room ID to join
-      * (string) `roomname`: The name of the room (used for the notification popup)
+      * (string) `sender`: The id of the player who invited the client.
+      * (string) `roomid`: The room id to join.
+      * (string) `roomname`: The name of the room.
   

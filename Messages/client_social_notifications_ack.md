@@ -8,4 +8,4 @@ from the social panel.
 * (object):
 
     * (string) `command`: Always `"social.notifications.ack"`.
-    * (string) `data`?: Presumably the id to acknowledge. The official client doesn't appear to set this - leaving it unset will acknowledge all notifications.  
+    * (string) `data`?: Presumably the id to acknowledge. The official client doesn't appear to set this—leaving it unset will acknowledge all notifications.  
