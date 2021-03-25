@@ -9,8 +9,7 @@ A message sent to a client indicating the presence of a new social notification.
     * (object) `data`:
         * (string) `stream`: The notification stream. Currently only observed to be `"user_[USERID]"`, where `[USERID]`
           is the user who initiated the notification (by adding a friend, for example).
-        * (string) `type`: One of `"test"`, `"announcement"`, `"supporter_new"`, `"supporter_gift"`,
-          `"supporter_specialthanks"`, `"supporter_expiring"`, `"supporter_expired"` or `"friend"`.
+        * (string) `type`: One of `"test"`, `"announcement"`, `"supporter_new"`, `"supporter_gift"`, `"supporter_specialthanks"`, `"supporter_expiring"`, `"supporter_expired"` or `"friend"`.
         * (object) `data`: Type-specific notification data. See below for the format of this object.
         * (string) `ts`: The ISO 8601-formatted timestamp of the notification.
         * (boolean) `seen`: Whether the notification has been [acknowledged](client_social_notifications_ack.md) yet.
