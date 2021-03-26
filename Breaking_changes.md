@@ -2,6 +2,10 @@
 
 This page lists breaking changes since version **5.1.3** of TETR.IO (commit id `0060f6a`, November 19, 2020, 4:07 PM UTC).
 
+## 6.0.2 (`7df7eec`, March 11, 2021, 9:22 PM UTC)
+
+* Bots can now use the social system (i.e. add friends, send DMs, etc.) and may be gifted TETR.IO Supporter
+
 ## 6.0.0 (`3a422fb`, January 31, 2021, 4:20 PM UTC)
 
 * Friend system added, which means that the official TETR.IO client will try to establish a Ribbon on startup instead of when entering the multiplayer screen.

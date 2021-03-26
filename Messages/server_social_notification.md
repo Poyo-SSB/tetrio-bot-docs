@@ -38,17 +38,17 @@ An arbitrary notification type with several parameters, that is often used to pr
 If set, the `action` parameter has one the following effects in the client:
 
 * `"user:[USERID]"` - opens the specified user's profile card.
-* `"support"` - opens the supporter purchase dialog.
+* `"support"` - opens the TETR.IO Supporter purchase dialog.
 * `"url:[URL]"` - opens the specified URL in another tab.
 * `"room:[ROOMID]"`- joins the specified room.
 
 ## `supporter_new` notification format
 
-Sent when you become a TETR.IO supporter as a result of purchasing months for yourself. No specific data is included.
+Sent when you become a TETR.IO Supporter as a result of purchasing months for yourself. No specific data is included.
 
 ## `supporter_gift` notification format
 
-Sent when another user gifts you TETR.IO supporter.
+Sent when another user gifts you TETR.IO Supporter.
 
 <!-- see https://kagar.in/disappointment.png for context -->
 
@@ -63,13 +63,13 @@ Sent when you become listed in the Special Thanks section of the in-game About p
 
 ## `supporter_expiring` notification format
 
-Sent when your TETR.IO supporter status is going to expire soon.
+Sent when your TETR.IO Supporter status is going to expire soon.
 
-* (string) `expires`: When your supporter status will expire, as an ISO 8601-formatted timestamp.
+* (string) `expires`: When the user's TETR.IO Supporter status will expire, as an ISO 8601-formatted timestamp.
 
 ## `supporter_expired` notification format
 
-Sent when your TETR.IO supporter status has expired. No specific data is included.
+Sent when your TETR.IO Supporter status has expired. No specific data is included.
 
 ## `friend` notification format
 

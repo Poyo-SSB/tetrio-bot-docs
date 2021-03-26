@@ -14,7 +14,7 @@ A message sent from a Ribbon indicating that the client has received a social me
             * (string) `user`: The id of the sender.
             * (object) `userdata`:
                 * (string ([Role](../Data/Role.md))) `role`: The role of the user. `anon` will never be seen in-practice as such users cannot use the social system.
-                * (boolean) `supporter`: Whether the user is a supporter.
+                * (boolean) `supporter`: Whether the user is a TETR.IO Supporter.
                 * (boolean) `verified`: Whether the user is verified.
             * (boolean) `system`: Whether this is a system message.
         * (string) `ts`: The ISO 8601-formatted timestamp of the message.

@@ -14,7 +14,7 @@ A message representing a chat message.
             * (string) `username`: The username of the user.
             * (string) `_id`: The id of the user.
             * (string ([Role](../Data/Role.md))) `role`?: The role of the user.
-            * (boolean) `supporter`?: Whether the user is a supporter.
+            * (boolean) `supporter`?: Whether the user is a TETR.IO Supporter.
             * (boolean) `verified`?: Whether the user is verified.
         * (boolean) `system`: Whether this is a system message.
 
