@@ -6,15 +6,15 @@ In attempting to act as a client for a Ribbon, it may be necessary to study the 
 1. Navigate to the `Network` tab.
 1. Filter network activity to only websocket activity by clicking on the `WS` text in the filter list.
 1. In TETR.IO, navigate to the multiplayer menu and do something (ideally join a private custom room, play a game, and leave). When you're done, leave the multiplayer menu.
-1. In the DevTools, there will be one or more items with names beginning with `ribbon`. Right-click each one and select `Save all as HAR with content` and save the files.
+1. In the DevTools, there will be one or more items with names beginning with `ribbon`. Right*click each one and select `Save all as HAR with content` and save the files.
 1. The resulting `.har` files contain all the data relating to the websocket, including the messages transmitted to and from the Ribbon server.
 
 `.har` files are JSON objects. The websocket messages are stored in an item in `log.entries` containing an array named `_webSocketMessages`. `log.entries` may contain multiple such items, so be careful to get the right one. `_webSocketMessages` is an array of the following data structure:
 
 * (object): A websocket message.
-    * (string) `type`: Either `"send"` or `"receive"`.
-    * (float) `time`: The Unix timestamp of this message in seconds.
-    * (integer) `opcode`: Websocket opcode, or something.
-    * (string) `data`: The binary data of this messge encoded in [Base64](https://en.wikipedia.org/wiki/Base64).
+  * (string) `type`: Either `"send"` or `"receive"`.
+  * (float) `time`: The Unix timestamp of this message in seconds.
+  * (integer) `opcode`: Websocket opcode, or something.
+  * (string) `data`: The binary data of this message encoded in [Base64](https://en.wikipedia.org/wiki/Base64).
 
 The [Scripts](Scripts) folder contains scripts to extract websocket data into more usable formats.
