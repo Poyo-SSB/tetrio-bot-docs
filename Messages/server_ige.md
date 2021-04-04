@@ -1,6 +1,6 @@
 # `ige` message (server)
 
-Unclear. I've only observed this to contain data about attacks being send to the user. I don't know what "ige" means or stands for.
+An in-game event. Currently only observed to carry information about sent garbage.
 
 ## Format
 
