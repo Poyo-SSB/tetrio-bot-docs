@@ -9,4 +9,4 @@ A message sent to the Ribbon to create a custom room.
     * (string) `command`: Always `"createroom"`.
     * (string) `data`: Always either `"private"` or `"public"`.
 
-The latest `signature` data can be found at the top of [tetrio.js](https://tetr.io/js/tetrio.js).
+Server responds with a [`joinroom` message](./server_joinroom.md) confirming that the room has been created and the bot is now inside it.
