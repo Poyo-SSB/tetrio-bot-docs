@@ -58,6 +58,7 @@ The core of a TETR.IO bot is interfacing with the [Ribbon](Ribbon.md) system.
         * [new](Messages/client_new.md)
         * ~~[ping](Messages/client_ping.md)~~
         * [resume](Messages/client_resume.md)
+        * [replay](Messages/client_replay.md)
         * [social.dm](Messages/client_social_dm.md)
         * [social.invite](Messages/client_social_invite.md)
         * [social.notifications.ack](Messages/client_social_notifications_ack.md)
