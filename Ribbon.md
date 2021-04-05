@@ -58,7 +58,7 @@ A packet beginning with `0xAE` is an extracted-id packet, containing a big-endia
 
 ```
 +------+-----+-----+-----+-----+==============+
-| 0x45 | extracted id (uint32) | msgpack blob |
+| 0xAE | extracted id (uint32) | msgpack blob |
 +------+-----+-----+-----+-----+==============+
 ```
 
@@ -72,7 +72,7 @@ A packet beginning with `0x58` is a batch packet, containing a zero-terminated a
 
 ```
 +------+------+------+------+------+------+------+------+------+===================+
-| 0x45 |   N lengths (uint32)...   | 0x00   0x00   0x00   0x00 | N packet blobs... |
+| 0x58 |   N lengths (uint32)...   | 0x00   0x00   0x00   0x00 | N packet blobs... |
 +------+------+------+------+------+------+------+------+------+===================+
 ```
 
