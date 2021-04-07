@@ -16,14 +16,11 @@ This is NOT the terminology that TETR.IO uses in its message format and code—i
 
 ## Endpoints
 
-The generic Ribbon endpoint URI is `wss://tetr.io/ribbon` - however, connecting to this directly is discouraged. Instead, clients should use the TETR.IO API to obtain the recommended endpoint (which corresponds to one of the Ribbon workers) before attempting to connect.
+The generic Ribbon endpoint URI is `wss://tetr.io/ribbon`. However, connecting to this endpoint directly is discouraged. Instead, clients should make an API call to `https://tetr.io/api/server/ribbon` (with OAuth, see [Chat](./Chat.md)) to obtain the recommended worker endpoint before attempting to connect:
 
-```http
-GET https://tetr.io/api/server/ribbon
-Authorization: Bearer <token>
-
-{"success": true, "endpoint": "<an endpoint URI>"}
-```
+* (object):
+    * (boolean) `success`: Whether the request succeeded.
+    * (string) `endpoint`: The worker endpoint to use.
 
 Official TETR.IO clients will only connect to the generic `/ribbon` endpoint if this request fails in some way.
 
