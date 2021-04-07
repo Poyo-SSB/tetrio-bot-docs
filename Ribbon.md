@@ -1,6 +1,6 @@
 # Ribbon
 
-**Ribbon** is the name for the websocket networking system used by TETR.IO since version 4.2.0. The base websocket URI is `wss://tetr.io/ribbon`.
+**Ribbon** is the name for the websocket networking system used by TETR.IO since version 4.2.0.
 
 When this documentation is unclear, incomplete, or out of date, reference [tetrio.js](https://tetr.io/js/tetrio.js). Most of it is obfuscated and/or minified, but the Ribbon code is not, even including comments.
 
@@ -13,6 +13,16 @@ Within the context of this documentation:
 * A **message** is a data object. **Packets** may contain one or more **messages**, and certain types of **messages** may contain nested **messages** within them.
 
 This is NOT the terminology that TETR.IO uses in its message format and code—it uses these two terms interchangeably.
+
+## Endpoints
+
+The generic Ribbon endpoint URI is `wss://tetr.io/ribbon`. However, connecting to this endpoint directly is discouraged. Instead, clients should make an API call to `https://tetr.io/api/server/ribbon` (with OAuth, see [Chat](./Chat.md)) to obtain the recommended worker endpoint before attempting to connect:
+
+* (object):
+    * (boolean) `success`: Whether the request succeeded.
+    * (string) `endpoint`: The worker endpoint to use.
+
+Official TETR.IO clients will only connect to the generic `/ribbon` endpoint if this request fails in some way.
 
 ## Diagram notation
 
