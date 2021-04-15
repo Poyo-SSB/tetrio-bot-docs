@@ -9,7 +9,7 @@ A message containing replay input data for the players currently playing.
     * (string) `command`: Always `"replay"`.
     * (object) `data`: 
         * (string) `listenID`: The id of the user which the replay is from + gameID. Example: `"5e9fcb8583e2a23fbb017cbf152218"` where `"5e9fcb8583e2a23fbb017cbf"` is the userID and `"152218"` is the gameID
-        * (array) `frames`:
+        * (object[]) `frames`:
            * (integer) `frame`: The frame the action was done on
            * (string) `type`: Possible values are `"keydown"` or `"keyup"` 
            * (object) `data`: 
