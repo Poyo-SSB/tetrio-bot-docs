@@ -1,6 +1,6 @@
 # `authorize` message (client)
 
-The client should send an `authorize` message upon first connecting to a Ribbon and recieving a [`hello` message](server_hello.md). The Ribbon will respond with an [`authorize` message](server_authorize.md).
+The client should send an `authorize` message upon first connecting to a Ribbon and receiving a [`hello` message](server_hello.md). The Ribbon will respond with an [`authorize` message](server_authorize.md).
 
 ## Format
 
