@@ -9,9 +9,9 @@ A message indicating that the custom room is about to start playing.
     * (string) `command`: Always `"readymulti"`.
     * (object) `data`:
          * (object[]) `contexts`: 
-               * (string) `listenID`: The event stream this data belongs to. This is the id of the user which sent the data concatenated with the id of the current game.
+               * (string) `listenID`: The event stream this data belongs to. This is the id of the user which sent the data concatenated with `gameID`.
                * (boolean) `alive`: Always `"true"`.
-         * (string) `gameID`: The ID of the game.
+         * (string) `gameID`: The id of the current game.
          * (boolean) `started`: Always `"false"`.
 
 TODO: This document is incomplete.
