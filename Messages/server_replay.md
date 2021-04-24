@@ -8,7 +8,7 @@ A message containing replay input data for the players currently playing.
     * (integer) `id`: [The id of this message.](../Ribbon.md#id-messages)
     * (string) `command`: Always `"replay"`.
     * (object) `data`: 
-        * (string) `listenID`: The event stream this data belongs to. This is the id of the user which sent the data concatenated with the id of the current game.
+        * (string) `listenID`: The event stream this data belongs to. This is the id of the user which sent the data concatenated with the id of the current game (as found in the [`readymulti` message](server_readymulti.md)).
         * (object[]) `frames`:
             * (integer) `frame`: The frame the event occurred on.
             * (string) `type`: Possible values are `"keydown"`, `"keyup"` and `"ige"`.
