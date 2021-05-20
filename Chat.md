@@ -21,4 +21,4 @@ authorization: Bearer <token>
     * (object) `user`: The user to whom the token belongs.
         * (string) `id`: The id of the user.
         * (string) `username`: The username of the user.
-        * ((string ([Role](../Data/Role.md))) `role`: The role of the user. (I use this to yell at anyone who tries to use a non-bot account).
+        * (string ([Role](../Data/Role.md))) `role`: The role of the user. (I use this to yell at anyone who tries to use a non-bot account).
