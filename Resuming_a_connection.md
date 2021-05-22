@@ -1,6 +1,6 @@
 # Resuming a connection
 
-There are two circumstances under which resuming a connection is necessary. The first is if a disconnection happens. The second is if the client is instructed to migrate to a new endpoint via a [`migrate` message](Message/server_migrate.md). Both situations can be handled the same way.
+There are two circumstances under which resuming a connection is necessary. The first is if a disconnection happens. The second is if the client is instructed to migrate to a new endpoint via a [`migrate` message](Messages/server_migrate.md). Both situations can be handled the same way.
 
 When initially connecting to a Ribbon, the Ribbon will send a [`hello` message](Messages/server_hello.md) to the client containing two critical pieces of information—the socket id (`id`) and the resume token (`resume`). These should be stored for use in the event that resuming is necessary.
 
