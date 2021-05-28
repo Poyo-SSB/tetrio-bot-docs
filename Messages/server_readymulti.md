@@ -46,6 +46,7 @@ A message indicating that the custom room is about to start playing.
                 * (integer) `fullinterval`: Unknown.
             * (boolean) `alive`: Always `"true"`.
         * (string) `gameID`: The id of the current game.
+        * (boolean) `first`: If the game is the first in the set or not.
         * (boolean) `started`: Always `"false"`.
     * (string) `gameID`: The id of the game.
 
