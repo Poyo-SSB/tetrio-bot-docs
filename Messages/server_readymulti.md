@@ -48,7 +48,6 @@ A message indicating that the custom room is about to start playing.
         * (string) `gameID`: The id of the current game.
         * (boolean) `first`: If the game is the first in the set or not.
         * (boolean) `started`: Always `"false"`.
-        * (string) `gameID`: The id of the game.
 
 `data.options` contain several more properties pertaining to the settings of a room in addition to the ones listed above in the. See the keys that start with `game.options` in [Room Config](../Room_Config.md) for these. The properties listed above and not on the aforementioned page are generally not modifiable by a user in-game.
 
