@@ -50,7 +50,7 @@ All top-level MessagePack objects contained within a packet are maps (i.e. `fixm
 
 ## Packet format
 
-Packets will always begin with one of three bytes, signifying the header type. Both a Ribbon and a client may send any of these three packet types, but the client can probably get away with only sending `0x45`.
+Packets will always begin with one of four bytes, signifying the header type. Both a Ribbon and a client may send any of these four packet types, but the client can probably get away with only sending `0x45`.
 
 ### `0x45` Standard id tag
 
