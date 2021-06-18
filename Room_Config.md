@@ -52,13 +52,13 @@ These are some values that are not modifiable normally but are sent from some ev
 
 * (integer) `version`: Protocol version, maybe? Always `15`.
 * (boolean) `seed_random`: Whether the game's RNG seed is random?
-* (integer) `seed`: The RNG seed of the game?
+* (integer) `seed`: The RNG seed of the game.
 * (boolean) `countdown`: Whether the game has a countdown.
 * (integer) `countdown_count`: The number from which to countdown.
 * (integer) `countdown_interval`: The time in milliseconds between each count.
 * (integer) `precountdown`: The time in milliseconds before the countdown begins.
 * (integer) `prestart`: The time in milliseconds before the time before the countdown begins?
-* (string) `mission`: Unused. Would otherwise be the text that displays before the game starts.
+* (string) `mission`: Seems to be room name.
 * (string) `mission_type`: Unused. Always `"mission_versus"`.
 * (string) `zoominto`: Unknown. Always `"slow"`?
 * (boolean) `display_lines`: Whether to display the number of lines cleared.
@@ -68,13 +68,14 @@ These are some values that are not modifiable normally but are sent from some ev
 * (boolean) `display_kills`: Whether to display the number of KOs.
 * (boolean) `display_placement`: Whether to display the current placement.
 * (boolean) `display_fire`: Whether to display fire, obvs.
+* (boolean) `display_username`: Unknown.
 * (boolean) `hasgarbage`: Whether the game has garbage?
 * (boolean) `neverstopbgm`: Whether to keep the BGM playing between games.
 * (integer) `forfeit_time`: Time in frames that a player needs to hold the quit button to forfeit.
 * (boolean) `infinitemovement`: Whether to enable infinite movement (disable lock resets).
 * (integer) `lockresets`: How many times to enable resetting the lock delay (by rotating or moving a piece).
 * (object) `objective`: Unknown.
-    * (string) `type`: Unknown. Always `"none"`. 
+     * (string) `type`: Unknown. Always `"none"`. 
 
 ## BGM
 
