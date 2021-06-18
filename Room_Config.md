@@ -46,6 +46,36 @@ hi!
 | `game.options.b2bchaining` | boolean | enable back-to-back chaining | Whether to make long Back-to-Back chains become more powerful. |
 | `game.options.clutch` | boolean | enable clutch clears | Whether to allow out-of-bound placements when they clear a line. |
 
+## Hidden and Unmodifiable config
+
+These are some values that are not modifiable normally but are sent from some events. They are usually sent in an options object.
+
+* (integer) `version`: Protocol version, maybe? Always `15`.
+* (boolean) `seed_random`: Whether the game's RNG seed is random?
+* (integer) `seed`: The RNG seed of the game?
+* (boolean) `countdown`: Whether the game has a countdown.
+* (integer) `countdown_count`: The number from which to countdown.
+* (integer) `countdown_interval`: The time in milliseconds between each count.
+* (integer) `precountdown`: The time in milliseconds before the countdown begins.
+* (integer) `prestart`: The time in milliseconds before the time before the countdown begins?
+* (string) `mission`: Unused. Would otherwise be the text that displays before the game starts.
+* (string) `mission_type`: Unused. Always `"mission_versus"`.
+* (string) `zoominto`: Unknown. Always `"slow"`?
+* (boolean) `display_lines`: Whether to display the number of lines cleared.
+* (boolean) `display_attack`: Whether to display the APM.
+* (boolean) `display_pieces`: Whether to display the number of pieces placed.
+* (boolean) `display_impending`: Whether to display the attack bar?
+* (boolean) `display_kills`: Whether to display the number of KOs.
+* (boolean) `display_placement`: Whether to display the current placement.
+* (boolean) `display_fire`: Whether to display fire, obvs.
+* (boolean) `hasgarbage`: Whether the game has garbage?
+* (boolean) `neverstopbgm`: Whether to keep the BGM playing between games.
+* (integer) `forfeit_time`: Time in frames that a player needs to hold the quit button to forfeit.
+* (boolean) `infinitemovement`: Whether to enable infinite movement (disable lock resets).
+* (integer) `lockresets`: How many times to enable resetting the lock delay (by rotating or moving a piece).
+* (object) `objective`: Unknown.
+    * (string) `type`: Unknown. Always `"none"`. 
+
 ## BGM
 
 The valid values of `data.meta.bgm` are any of the following:
