@@ -1,6 +1,6 @@
 # `replay` message (server)
 
-A message containing replay input data for the players currently playing.
+A message containing replay input data or sent lines for the players currently playing.
 
 ## Format
 
@@ -16,5 +16,14 @@ A message containing replay input data for the players currently playing.
                 * (string) `key`: Possible values are `"hardDrop"`, `"softDrop"`, `"moveLeft"`, `"moveRight"`, `"rotateCW"`, `"rotateCCW"`, `"rotate180"` and `"hold"`.
                 * (float) `subframe`: The subframe the action was done on.
                 * (integer) `provisioned`: The current frame.
+            * (object) `data`: (for type ige)
+                * (integer) `id`: Integer that increments every time type ige replay gets sent.
+                * (integer) `frame`: The frame the event occurred on.
+                * (string) `type`: Possible values are `"ige"`.
+                * (object) `data`:
+                    * (string) `type`: Always `"attack"`.
+                    * (integer) `lines`: Amount of lines sent.
+                    * (integer) `column`: The column where the lines were sent to.
+                    * (string) `sender`: The username of the user who sent the attack
+                    * (integer) `sent_frame`: The frame the event occurred on (for some reason this is always slightly different than any other frame integer).
 
-TODO: This document is incomplete.
