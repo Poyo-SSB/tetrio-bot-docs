@@ -142,6 +142,7 @@ Sometimes, the server will send [Buffer messages](Messages/server_Buffer.md). It
 * [leaveroom](Messages/client_leaveroom.md)
 * [new](Messages/client_new.md)
 * [ping](Messages/client_ping.md)
+* [replay](Messages/client_replay.md)
 * [resume](Messages/client_resume.md)
 * [social.dm](Messages/client_social_dm.md)
 * [social.invite](Messages/client_social_invite.md)
