@@ -11,7 +11,7 @@ A message containing replay input data or sent lines for the players currently p
         * (string) `listenID`: The gameID (as found in the [`readymulti` message](server_readymulti.md)).
         * (object[]) `frames`:
             * (integer) `frame`: The frame the event occurred on.
-            * (string) `type`: Possible values are `"keydown"`, `"keyup"`, `"ige"`, `"start"`, `"targets"`, `"full"`.
+            * (string) `type`: Possible values are `"keydown"`, `"keyup"`, `"ige"`, `"start"`, `"targets"`, `"full"` and `"end"'`.
             * (object) `data`:  (for type keydown and keyup)
                 * (string) `key`: Possible values are `"hardDrop"`, `"softDrop"`, `"moveLeft"`, `"moveRight"`, `"rotateCW"`, `"rotateCCW"`, `"rotate180"` and `"hold"`.
                 * (float) `subframe`: The subframe the action was done on.
