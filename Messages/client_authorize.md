@@ -23,4 +23,4 @@ The client should send an `authorize` message upon first connecting to a Ribbon 
                 * (integer) `time`?: The Unix timestamp of the build in milliseconds.
         * (string) `i`?: Unknown. Some sort of hash or other such hexadecimal string.
 
-The latest `signature` data can be found at the top of [tetrio.js](https://tetr.io/js/tetrio.js).
+The latest `signature` data can be found at the [environment API](https://tetr.io/api/server/environment).
