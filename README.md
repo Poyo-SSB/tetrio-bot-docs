@@ -49,6 +49,8 @@ Once you're done with that, the core of a TETR.IO bot is interfacing with the [R
     * [Resuming a connection](Resuming_a_connection.md)
 * Guides
     * [Chat](Chat.md)
+* Game mechanics
+    * [Piece RNG](Piece_RNG.md)
 * Ribbon messages
     * Client
         * [authorize](Messages/client_authorize.md)
