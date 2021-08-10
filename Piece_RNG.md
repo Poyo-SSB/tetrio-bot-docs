@@ -38,7 +38,7 @@ function rng(seed) {
 
 In singleplayer, replays with `no_szo` set to true (currently accessible via stride mode) will skip the first piece if it is any of S, Z, or O.
 
-# `"7-bag"`
+## `"7-bag"`
 
 The 7-bag randomization system generates a set of the seven tetrominos and shuffles them before putting them into the queue. This guarantees that there will never be a gap of more than 12 tetrominos between any two tetrominos of the same type. As with any shuffling algorithm, the order of the input array matters. TETR.IO uses the ordering `ZLOSIJT` (a rainbow, how cute!) for all purposes.
 
@@ -46,7 +46,7 @@ The 7-bag randomization system generates a set of the seven tetrominos and shuff
 queue.push(...rng.shuffleArray(["Z", "L", "O", "S", "I", "J", "T"]));
 ```
 
-# `"14-bag"`
+## `"14-bag"`
 
 The 14-bag randomization system is a variant of the 7-bag system with less of a guarantee against droughts. The input ordering is `ZLOSIJTZLOSIJT`.
 
@@ -54,7 +54,7 @@ The 14-bag randomization system is a variant of the 7-bag system with less of a 
 queue.push(...rng.shuffleArray(["Z", "L", "O", "S", "I", "J", "T", "Z", "L", "O", "S", "I", "J", "T"]));
 ```
 
-# `"classic"`
+## `"classic"`
 
 This is the randomizer used in *Tetris* for the NES. For each piece, the randomizer rolls an eight-sided die, with seven sides representing seven tetrominos and the eighth side representing a reroll. If a reroll or the same tetromino that was previously generated is rolled, then the randomizer selects randomly from the tetrominos.
 
@@ -71,7 +71,7 @@ lastGenerated = index;
 queue.push(TETROMINOS[index]);
 ```
 
-# `"pairs"`
+## `"pairs"`
 
 This randomizer picks pairs of tetromino types and gives three of each in a random order.
 
@@ -83,7 +83,7 @@ rng.shuffleArray(pairs);
 queue.push(...pairs)
 ```
 
-# `"total mayhem"`
+## `"total mayhem"`
 
 This randomizer is entirely random. <!-- xD -->
 
