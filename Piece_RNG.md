@@ -25,7 +25,6 @@ function rng(seed) {
             }
 
             for (let i = array.length - 1; i != 0; i--) {
-                console.log(i)
                 const r = Math.floor(this.nextFloat() * (i + 1));
                 [array[i], array[r]] = [array[r], array[i]];
             }
