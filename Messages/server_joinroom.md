@@ -7,4 +7,6 @@ A message confirming that a user has joined a room, sent in response to a [`join
 * (object):
     * (integer) `id`: [The id of this message.](../Ribbon.md#id-messages)
     * (string) `command`: Always `"joinroom"`.
-    * (string) `data`: The four-letter id of the room to join, case-insensitive.
+    * (object) `data`: 
+        * (string) `id`: The id of the room that was joined.
+        * (boolean) `silent`: Whether or not the join was silent (when the room is in superlobby mode)?
