@@ -1,6 +1,6 @@
 # `ige` message (server)
 
-An in-game event. Currently only observed to carry information about sent garbage.
+An in-game event. Currently only observed to carry information about sent garbage and player death.
 
 ## Format
 
