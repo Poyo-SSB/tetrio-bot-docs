@@ -18,3 +18,4 @@ Represents a player in a TETR.IO room.
     * (string) `bracket`: Always either `"player"` or `"spectator"`.
     * (boolean) `supporter`: Whether the user is a TETR.IO Supporter.
     * (boolean) `verified`: Whether the user is verified.
+    * (string | null) `country`: The two letter country code of a user (`null` if private or anon).
