@@ -22,6 +22,7 @@ A message representing an update to room settings, sent as confirmation of the r
                 * (string) `type`: Mission type? 
                 * (integer) `ft`: First to. 
                 * (integer) `wb`: Win by. 
+                * (boolean) `record_replays`: Whether or not to record replays. Seems to be `true` on 1v1s and `false` everywhere else?
                 * (string) `gamemode`: Also mission type? 
                 * (string) `winningKey`: Win condition? 
                 * (object) `keys`: Stats display data.

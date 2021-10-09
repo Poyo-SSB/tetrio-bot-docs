@@ -45,6 +45,7 @@ hi!
 | `game.options.manual_allowed` | boolean | allow manual targeting | Whether to allow users to click boards to manually target them. |
 | `game.options.b2bchaining` | boolean | enable back-to-back chaining | Whether to make long Back-to-Back chains become more powerful. |
 | `game.options.clutch` | boolean | enable clutch clears | Whether to allow out-of-bound placements when they clear a line. |
+| `game.options.passthrough` | boolean | enable passthrough | If disabled, attacks can be canceled while in transit or during latency. Experimental, may be removed or become standard. |
 
 ## Hidden and Unmodifiable config
 
@@ -61,6 +62,12 @@ These are some values that are not modifiable normally but are sent from some ev
 * (string) `mission`: Seems to be room name.
 * (string) `mission_type`: Unused. Always `"mission_versus"`.
 * (string) `zoominto`: Unknown. Always `"slow"`?
+* (string) `slot_counter1`: Always `"kills"`?
+* (string) `slot_counter2`: Always `"attack"`?
+* (string) `slot_counter3`: Always `"pieces"`?
+* (string) `slot_counter4`: Always `null`?
+* (string) `slot_counter5`: Always `"placement"`?
+* (string) `slot_bar1`: Always `"impending"`?
 * (boolean) `display_lines`: Whether to display the number of lines cleared.
 * (boolean) `display_attack`: Whether to display the APM.
 * (boolean) `display_pieces`: Whether to display the number of pieces placed.
