@@ -100,4 +100,4 @@ Once you're done with that, the core of a TETR.IO bot is interfacing with the [R
 
 ## Disclaimer
 
-Hi! I'm Poyo. I wrote (most of) this documentation. I am not associated with TETR.IO or osk. All data here has been gathered via analyzing [code](https://tetr.io/js/tetrio.js) and testing responsibly. Use this documentation at your own risk. Please enjoy! ❤
+Hi! I'm Poyo. I wrote (most of) this documentation. I am not affiliated with TETR.IO or osk. All data here has been gathered via analyzing [code](https://tetr.io/js/tetrio.js) and testing responsibly. Use this documentation at your own risk. Please enjoy! ❤
