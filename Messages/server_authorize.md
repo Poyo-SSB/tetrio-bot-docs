@@ -20,7 +20,7 @@ A message sent by a Ribbon to the client to accept or reject an [`authorize` mes
                     * (string) `username`: The username of the user.
                     * (number) `avatar_revision`: The revision of the avatar.
                 * (object) `to`: Exactly the same with from, except for the user who recieved the relationship.
-                * (string) `type`: The type of the relationship. Ex. "friend" or "block". There might be some other types.
+                * (string) `type`: The type of the relationship. Ex. "friend", "pending", or "block". There might be some other types.
                 * (number) `unread`: Unread messages?
                 * (string) `updated`: When the relationship was established? (This is an ISO-8601 time string)
 
