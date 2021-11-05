@@ -23,5 +23,7 @@ A message sent by a Ribbon to the client to accept or reject an [`authorize` mes
                 * (string) `type`: The type of the relationship. Ex. "friend", "pending", or "block". There might be some other types.
                 * (number) `unread`: Unread messages?
                 * (string) `updated`: When the relationship was established? (This is an ISO-8601 time string)
+            * (object) `presences`: An object where the key is a userID and the value is a presence
+                * ([Presence](../Data/Presence.md)) [userID]
 
 TODO: This document is incomplete.
