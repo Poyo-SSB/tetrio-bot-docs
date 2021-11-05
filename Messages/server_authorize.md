@@ -11,3 +11,17 @@ A message sent by a Ribbon to the client to accept or reject an [`authorize` mes
         * (boolean) `success`: Whether the authorization request was successful.
         * (boolean) `maintenance`: Probably whether the server is undergoing maintenance right now.
         * ([Worker](../Data/Worker.md)) `worker`: The worker the client is communicating with.
+        * (object) `social`:
+            * (integer) `total_online`: The number of people online.
+            * (object[]) `relationships`:
+                * (string) `_id`: The id of the relationship?
+                * (object) `from`:
+                    * (string) `_id`: The id of the user who started the relationship? (This is probably the id of the user recieving this packet)
+                    * (string) `username`: The username of the user.
+                    * (number) `avatar_revision`: The revision of the avatar.
+                * (object) `to`: Exactly the same with from, except for the user who recieved the relationship.
+                * (string) `type`: The type of the relationship. Ex. "friend" or "block". There might be some other types.
+                * (number) `unread`: Unread messages?
+                * (string) `updated`: When the relationship was established? (This is an ISO-8601 time string)
+
+TODO: This document is incomplete.
