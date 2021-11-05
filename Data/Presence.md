@@ -8,7 +8,7 @@ Represents the description of a user's social status. Depending on the user's pr
     * (string) `status`: Always one of `"online"`, `"away"`, `"busy"` or `"offline"`.
     * (string ([Detail](#Detail))): `detail`: Details of the user's current status.
     * (string) `user`?: The id of the user whose presence was changed. Only present on server [`social.presence` messages](../Messages/server_social_presence.md). 
-    * (boolean) `invitable`?: Whether the user can be invited to a lobby. Only present on server [`social.presence` messages](../Messages/server_social_presence.md).
+    * (boolean) `invitable`?: Whether the user can be invited to a lobby. Only present on server [`social.presence` messages](../Messages/server_social_presence.md) and [`authorize` messages](../Messages/server_authorize.md).
 
 ## Detail
 
