@@ -123,6 +123,11 @@ Most Ribbon messages have an integer `id` property. For gameplay especially, it 
 
 If too many messages are out of order, it's advisable to close the connection. The official TETR.IO client will close the connection if more than 5200 packets are out of order.
 
+While attaching ids to client messages is mostly unecessary unless dealing with gameplay, special care must be taken when doing so.
+The server will ignore any ids attached to [`new`](Messages/client_new.md), [`hello`](Messages/client_hello.md) and [`resume`](Messages/client_resume.md) messages.
+Furthermore, should an id get skipped, the server will close the connection immediately without comment.  
+Therefore, ids must not be incremented after sending the aforementioned packets, as the following packet will cause the connection to close.
+
 ## Buffer messages
 
 Sometimes, the server will send [Buffer messages](Messages/server_Buffer.md). It's very important that any client handle these properly.
