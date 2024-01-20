@@ -14,7 +14,20 @@ This repository is dedicated to documenting the network protocol used by TETR.IO
 
 ## Bot application process
 
-Running a bot on a user account is a violation of TETR.IO's [community rules](https://tetr.io/about/rules/) and *will* result in your account being terminated. To run a bot, **you must acquire a bot account** ([e.g.](https://ch.tetr.io/u/5f9751f462f608df7f976f9e)). To get one, message osk on Discord with a short outline of your bot's intended functionality (or email them, but they do not check emails as frequently). osk's contact info can be found [here](https://osk.sh/).
+Running a bot on a user account is a violation of TETR.IO's [community rules](https://tetr.io/about/rules/) and *will* result in your account being terminated. To run a bot, **you must acquire a bot account** ([e.g.](https://ch.tetr.io/u/5f9751f462f608df7f976f9e)). To get one, send an email to [support@tetr.io](mailto:support@tetr.io) with a short outline of your bot's intended functionality. You must include the following info in the email: </br>
+
+```
+* Your ingame username/presence on TETRIO
+   * If you'll be developing this bot as a team, please briefly describe associated developers as well.
+* Your bot's intended usage </br>
+   * Including projected user experience(E.G. will this bot be primarily used through the TETRIO social system, Discord, or a selfhosted website?), if applicable.
+   * Open sourcing the project is allowed, although we would appreciate a heads-up if you decide to do this.
+* The username you would like to reserve for your bot account
+* Prior development experience
+```
+> -- *`TETR.IO Admin` [ZaptorZap](https://github.com/zaptorzap), 14 Nov 2023 23:45*
+
+</br>
 
 ## What can bots do?
 
