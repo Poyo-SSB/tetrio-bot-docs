@@ -25,7 +25,7 @@ Running a bot on a user account is a violation of TETR.IO's [community rules](ht
 * The username you would like to reserve for your bot account
 * Prior development experience
 ```
-> -- *[ZaptorZap](https://github.com/zaptorzap), 14 Nov 2023 23:45*
+> -- *`TETR.IO Admin` [ZaptorZap](https://github.com/zaptorzap), 14 Nov 2023 23:45*
 
 </br>
 
